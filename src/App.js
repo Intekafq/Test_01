@@ -1,23 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import Headnav from './component/Headnav';
+import Frontsection from './component/Frontsection';
+import Aboutme from './component/Aboutme';
+import Services from './component/Services';
+import Choose from './component/Choose';
+import Client from './component/Client';
+import Footer from './component/Footer';
 
-function App() {
+
+function App(props) {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Headnav />
+     < Frontsection/>
+     <Aboutme/>
+     <Services/>
+     <Choose/>
+     <Client/>
+     <Footer/>
     </div>
   );
 }
